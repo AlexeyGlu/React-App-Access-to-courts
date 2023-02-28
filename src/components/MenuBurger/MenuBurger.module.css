@@ -1,0 +1,38 @@
+@media screen and (max-width: 790px) {
+
+.links {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    background-color: #C4C4C4;
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        transition: all .5s linear 0s;
+        -moz-transition: all .5s linear 0s;
+        -webkit-transition: all .5s linear 0s;
+        -o-transition: all .5s linear 0s;
+        margin: 0 auto;
+        margin-top: 30px;
+        border: 3px solid #2549CC;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 150px;
+        text-align: center;
+    }
+
+.links a:hover {
+    background-color: #bac8fa;
+    -webkit-box-shadow: 0px 0px 20px 2px #97ADFC;
+    -moz-box-shadow: 0px 0px 20px 2px #97ADFC;
+    box-shadow: 0px 0px 20px 2px #97ADFC;
+    }
+}

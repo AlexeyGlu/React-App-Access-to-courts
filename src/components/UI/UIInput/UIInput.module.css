@@ -1,0 +1,29 @@
+.wrapper__input {
+    position: relative;
+    display: inline-flex;
+}
+.input {
+    max-width: 330px;
+    padding: 10px 15px;
+    padding-right: 45px;
+    border: 3px solid #dfe2df;
+    font-size: 14px;
+    outline: none;
+}
+.input:focus {
+    border-color: #2549CC;
+}
+
+.wrapper__input img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: .5;
+}
+
+.wrapper__input img:hover {
+    opacity: 1;
+}

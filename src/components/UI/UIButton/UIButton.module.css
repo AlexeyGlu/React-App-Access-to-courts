@@ -1,0 +1,90 @@
+button {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 3;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  color: #444;
+  vertical-align: middle;
+}
+
+button.button {
+  color: #4a4a4a;
+  transition: color 0.4s ease-in-out;
+}
+
+button.button::before,
+button.button::after,
+button.button span::before,
+button.button span::after {
+  position: absolute;
+  content: '';
+  background: #999;
+  transition: all 0.4s ease-in-out;
+}
+
+button.button::before,
+button.button::after {
+  width: 2px;
+}
+button.button::before {
+  top: 0;
+  left: 0;
+  bottom: 70%;
+}
+button.button::after {
+  bottom: 0;
+  right: 0;
+  top: 70%;
+}
+button.button span::before,
+button.button span::after {
+  height: 2px;
+  transition: all 0.4s ease-in-out;
+}
+button.button span::before {
+  top: 0;
+  left: 0;
+  right: 90%;
+}
+button.button span::after {
+  bottom: 0;
+  right: 0;
+  left: 90%;
+}
+button.button:hover {
+  color: #333;
+  transition: color 0.4s ease-in-out;
+}
+button.button:hover::before,
+button.button:hover::after,
+button.button:hover span::before,
+button.button:hover span::after {
+  transition: all 0.4s ease-in-out;
+  background: #333;
+}
+button.button:hover::before {
+  bottom: 0;
+}
+button.button:hover::after {
+  top: 0;
+}
+button.button:hover span::before {
+  right: 0;
+}
+button.button:hover span::after {
+  left: 0;
+}
+button.button:active {
+  text-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+button.button:active::before,
+button.button:active::after,
+button.button:active span::before,
+button.button:active span::after {
+  transform: scale(0.85);
+}
