@@ -2,10 +2,15 @@
 	"name": "vite-react-starter",
 	"version": "0.0.0",
 	"scripts": {
-		"dev": "vite --host --port 1337",
-		"build": "vite build",
-		"preview": "vite preview"
+		//"dev": "vite --host --port 1337",
+		//"build": "vite build",
+		//"preview": "vite preview"
+		"start": "node app.js"
 	},
+	"repository": {
+  		"type": "git",
+  		"url": "https://github.com/ilyababelnik/React-App-Access-to-courts"
+},
 	"dependencies": {
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
