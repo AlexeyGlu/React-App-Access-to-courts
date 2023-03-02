@@ -5,7 +5,7 @@
 		//"dev": "vite --host --port 1337",
 		//"build": "vite build",
 		//"preview": "vite preview"
-		"start": "node app.js"
+		"start": "node App.jsx"
 	},
 	"repository": {
   		"type": "git",
